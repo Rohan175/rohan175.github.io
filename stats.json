@@ -1,0 +1,76 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-aa9570313651ef926b5a.js",
+      "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
+    ],
+    "path---": [
+      "path----0c6d98667bdb8cafd690.js",
+      "path----0c6d98667bdb8cafd690.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-9b904c970b9e8ea0b673.js",
+      "component---src-pages-contact-js-9b904c970b9e8ea0b673.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-ea85ffb7001b103fbdec.js",
+      "component---src-layouts-index-js-ea85ffb7001b103fbdec.js.map"
+    ],
+    "path---an-attempt-to-understand-life-ft-corona": [
+      "path---an-attempt-to-understand-life-ft-corona-2adbea70488364f99f96.js",
+      "path---an-attempt-to-understand-life-ft-corona-2adbea70488364f99f96.js.map"
+    ],
+    "path---index": [
+      "path---index-678b6e6a15b90d86e8a0.js",
+      "path---index-678b6e6a15b90d86e8a0.js.map"
+    ],
+    "component---src-pages-search-js": [
+      "component---src-pages-search-js-47ae36f81643de0f206a.js",
+      "component---src-pages-search-js-47ae36f81643de0f206a.js.map"
+    ],
+    "commons": [
+      "commons-6211ee08a32f0422a7c3.js",
+      "build-js-styles.css",
+      "commons-6211ee08a32f0422a7c3.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---success": [
+      "path---success-18ba8f4ef3df9687745c.js",
+      "path---success-18ba8f4ef3df9687745c.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-post-template-js": [
+      "component---src-templates-post-template-js-7120bc09ea5454e8e91d.js",
+      "component---src-templates-post-template-js-7120bc09ea5454e8e91d.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-2b97e8ea31174242cc85.js",
+      "build-js-styles.css",
+      "app-2b97e8ea31174242cc85.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-templates-page-template-js": [
+      "component---src-templates-page-template-js-e0434750f574a9276ef2.js",
+      "component---src-templates-page-template-js-e0434750f574a9276ef2.js.map"
+    ],
+    "path---search": [
+      "path---search-72f94d3e98b143b0dd8e.js",
+      "path---search-72f94d3e98b143b0dd8e.js.map"
+    ],
+    "path---about": [
+      "path---about-6fcd9d9569a03b07df93.js",
+      "path---about-6fcd9d9569a03b07df93.js.map"
+    ]
+  }
+}
