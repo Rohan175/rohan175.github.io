@@ -205,163 +205,6 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ 502:
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	exports.__esModule = true;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _propTypes = __webpack_require__(149);
-
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-
-	var _reactJss = __webpack_require__(261);
-
-	var _reactJss2 = _interopRequireDefault(_reactJss);
-
-	var _config = __webpack_require__(493);
-
-	var _config2 = _interopRequireDefault(_config);
-
-	var _github = __webpack_require__(503);
-
-	var _github2 = _interopRequireDefault(_github);
-
-	var _whatsapp = __webpack_require__(504);
-
-	var _whatsapp2 = _interopRequireDefault(_whatsapp);
-
-	var _linkedin = __webpack_require__(505);
-
-	var _linkedin2 = _interopRequireDefault(_linkedin);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var styles = function styles(theme) {
-	  return {
-	    social: {
-	      display: "flex",
-	      justifyContent: "center",
-	      flexWrap: "wrap"
-	    },
-	    link: {
-	      display: "inline-block",
-	      padding: "5px",
-	      "&:hover": {
-	        "& svg": {
-	          fill: theme.info.colors.socialIconsHover
-	        }
-	      }
-	    },
-	    svg: {
-	      width: "40px",
-	      height: "40px",
-	      fill: theme.info.colors.socialIcons,
-	      transition: "all .5s"
-	    }
-	  };
-	};
-
-	var Socialcons = function Socialcons(props) {
-	  var _icons;
-
-	  var classes = props.classes;
-
-	  var items = _config2.default.authorSocialLinks;
-	  var icons = (_icons = {
-	    twitter: _linkedin2.default,
-	    linkedin: _linkedin2.default
-	  }, _icons["linkedin"] = _linkedin2.default, _icons.wtsapp = _whatsapp2.default, _icons.github = _github2.default, _icons);
-
-	  return _react2.default.createElement(
-	    "div",
-	    { className: classes.social },
-	    items.map(function (item) {
-	      var Icon = icons[item.name];
-	      return _react2.default.createElement(
-	        "a",
-	        {
-	          href: item.url,
-	          key: item.name,
-	          className: classes.link,
-	          target: "_blank",
-	          rel: "noopener noreferrer",
-	          title: item.name
-	        },
-	        _react2.default.createElement(Icon, { className: classes.svg })
-	      );
-	    })
-	  );
-	};
-
-	Socialcons.propTypes = {
-	  classes: _propTypes2.default.object.isRequired
-	};
-
-	exports.default = (0, _reactJss2.default)(styles)(Socialcons);
-	module.exports = exports["default"];
-
-/***/ }),
-
-/***/ 503:
-/***/ (function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1);
-
-	function GithubIcon (props) {
-	    return React.createElement("svg",props,React.createElement("path",{"d":"M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"}));
-	}
-
-	GithubIcon.defaultProps = {"viewBox":"0 0 512 512"};
-
-	module.exports = GithubIcon;
-
-	GithubIcon.default = GithubIcon;
-
-
-/***/ }),
-
-/***/ 504:
-/***/ (function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1);
-
-	function WhatsAppIcon (props) {
-	    return React.createElement("svg",props,React.createElement("path",{"d":"m544.386719 93.007812c-59.875-59.945312-139.503907-92.9726558-224.335938-93.007812-174.804687 0-317.070312 142.261719-317.140625 317.113281-.023437 55.894531 14.578125 110.457031 42.332032 158.550781l-44.992188 164.335938 168.121094-44.101562c46.324218 25.269531 98.476562 38.585937 151.550781 38.601562h.132813c174.785156 0 317.066406-142.273438 317.132812-317.132812.035156-84.742188-32.921875-164.417969-92.800781-224.359376zm-224.335938 487.933594h-.109375c-47.296875-.019531-93.683594-12.730468-134.160156-36.742187l-9.621094-5.714844-99.765625 26.171875 26.628907-97.269531-6.269532-9.972657c-26.386718-41.96875-40.320312-90.476562-40.296875-140.28125.054688-145.332031 118.304688-263.570312 263.699219-263.570312 70.40625.023438 136.589844 27.476562 186.355469 77.300781s77.15625 116.050781 77.132812 186.484375c-.0625 145.34375-118.304687 263.59375-263.59375 263.59375zm144.585938-197.417968c-7.921875-3.96875-46.882813-23.132813-54.148438-25.78125-7.257812-2.644532-12.546875-3.960938-17.824219 3.96875-5.285156 7.929687-20.46875 25.78125-25.09375 31.066406-4.625 5.289062-9.242187 5.953125-17.167968 1.984375-7.925782-3.964844-33.457032-12.335938-63.726563-39.332031-23.554687-21.011719-39.457031-46.960938-44.082031-54.890626-4.617188-7.9375-.039062-11.8125 3.476562-16.171874 8.578126-10.652344 17.167969-21.820313 19.808594-27.105469 2.644532-5.289063 1.320313-9.917969-.664062-13.882813-1.976563-3.964844-17.824219-42.96875-24.425782-58.839844-6.4375-15.445312-12.964843-13.359374-17.832031-13.601562-4.617187-.230469-9.902343-.277344-15.1875-.277344-5.28125 0-13.867187 1.980469-21.132812 9.917969-7.261719 7.933594-27.730469 27.101563-27.730469 66.105469s28.394531 76.683594 32.355469 81.972656c3.960937 5.289062 55.878906 85.328125 135.367187 119.648438 18.90625 8.171874 33.664063 13.042968 45.175782 16.695312 18.984374 6.03125 36.253906 5.179688 49.910156 3.140625 15.226562-2.277344 46.878906-19.171875 53.488281-37.679687 6.601563-18.511719 6.601563-34.375 4.617187-37.683594-1.976562-3.304688-7.261718-5.285156-15.183593-9.253906zm0 0","fillRule":"evenodd"}));
-	}
-
-	WhatsAppIcon.defaultProps = {"height":"300pt","viewBox":"200 -75 300 850","width":"300pt"};
-
-	module.exports = WhatsAppIcon;
-
-	WhatsAppIcon.default = WhatsAppIcon;
-
-
-/***/ }),
-
-/***/ 505:
-/***/ (function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1);
-
-	function LinkedinIcon (props) {
-	    return React.createElement("svg",props,React.createElement("path",{"d":"m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"}));
-	}
-
-	LinkedinIcon.defaultProps = {"height":"400pt","viewBox":"0 -120 500 750","width":"400pt"};
-
-	module.exports = LinkedinIcon;
-
-	LinkedinIcon.default = LinkedinIcon;
-
-
-/***/ }),
-
 /***/ 506:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -385,6 +228,10 @@ webpackJsonp([1],{
 
 	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
 
+	var _MenuItem = __webpack_require__(477);
+
+	var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var styles = function styles(theme) {
@@ -398,9 +245,9 @@ webpackJsonp([1],{
 	      width: "100%"
 	    },
 	    link: {
-	      padding: ".5em",
-	      fontWeight: 300,
-	      textTransform: "lowercase",
+	      padding: ".7em",
+	      fontWeight: 500,
+	      // textTransform: "lowercase",
 	      color: theme.info.colors.menuLink,
 	      "&:hover": {
 	        color: theme.info.colors.menuLinkHover

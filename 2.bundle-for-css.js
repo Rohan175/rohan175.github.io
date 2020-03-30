@@ -19,6 +19,10 @@ webpackJsonp([2],{
 
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 
+	var _SocialIcons = __webpack_require__(502);
+
+	var _SocialIcons2 = _interopRequireDefault(_SocialIcons);
+
 	var _reactShare = __webpack_require__(628);
 
 	var _config = __webpack_require__(493);
@@ -90,72 +94,86 @@ webpackJsonp([2],{
 
 	    return _react2.default.createElement(
 	      "div",
-	      { className: classes.share },
+	      null,
 	      _react2.default.createElement(
-	        "span",
-	        { className: classes.label },
-	        "SHARE"
+	        "div",
+	        { className: classes.share },
+	        _react2.default.createElement(
+	          "span",
+	          { className: classes.label },
+	          "SHARE"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: classes.links },
+	          _react2.default.createElement(
+	            _reactShare.TwitterShareButton,
+	            { url: url, title: title },
+	            _react2.default.createElement(_reactShare.TwitterIcon, { round: true, size: iconSize })
+	          ),
+	          _react2.default.createElement(
+	            _reactShare.GooglePlusShareButton,
+	            { url: url },
+	            _react2.default.createElement(_reactShare.GooglePlusIcon, { round: true, size: iconSize }),
+	            _react2.default.createElement(
+	              _reactShare.GooglePlusShareCount,
+	              { url: url },
+	              function (count) {
+	                return _react2.default.createElement(
+	                  "div",
+	                  { className: "share-count" },
+	                  filter(count)
+	                );
+	              }
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactShare.FacebookShareButton,
+	            {
+	              url: url,
+	              quote: title + " - " + excerpt,
+	              "aria-label": "Facebook share"
+	            },
+	            _react2.default.createElement(_reactShare.FacebookIcon, { round: true, size: iconSize }),
+	            _react2.default.createElement(
+	              _reactShare.FacebookShareCount,
+	              { url: url },
+	              function (count) {
+	                return _react2.default.createElement(
+	                  "div",
+	                  { className: "share-count" },
+	                  filter(count)
+	                );
+	              }
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactShare.LinkedinShareButton,
+	            { url: url, title: title, description: excerpt },
+	            _react2.default.createElement(_reactShare.LinkedinIcon, { round: true, size: iconSize }),
+	            _react2.default.createElement(
+	              _reactShare.LinkedinShareCount,
+	              { url: url },
+	              function (count) {
+	                return _react2.default.createElement(
+	                  "div",
+	                  { className: "share-count" },
+	                  filter(count)
+	                );
+	              }
+	            )
+	          )
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { className: classes.links },
+	        { className: classes.share, style: { "paddingTop": "50px" } },
 	        _react2.default.createElement(
-	          _reactShare.TwitterShareButton,
-	          { url: url, title: title },
-	          _react2.default.createElement(_reactShare.TwitterIcon, { round: true, size: iconSize })
+	          "span",
+	          { className: classes.label },
+	          "Contact Me"
 	        ),
-	        _react2.default.createElement(
-	          _reactShare.GooglePlusShareButton,
-	          { url: url },
-	          _react2.default.createElement(_reactShare.GooglePlusIcon, { round: true, size: iconSize }),
-	          _react2.default.createElement(
-	            _reactShare.GooglePlusShareCount,
-	            { url: url },
-	            function (count) {
-	              return _react2.default.createElement(
-	                "div",
-	                { className: "share-count" },
-	                filter(count)
-	              );
-	            }
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactShare.FacebookShareButton,
-	          {
-	            url: url,
-	            quote: title + " - " + excerpt,
-	            "aria-label": "Facebook share"
-	          },
-	          _react2.default.createElement(_reactShare.FacebookIcon, { round: true, size: iconSize }),
-	          _react2.default.createElement(
-	            _reactShare.FacebookShareCount,
-	            { url: url },
-	            function (count) {
-	              return _react2.default.createElement(
-	                "div",
-	                { className: "share-count" },
-	                filter(count)
-	              );
-	            }
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactShare.LinkedinShareButton,
-	          { url: url, title: title, description: excerpt },
-	          _react2.default.createElement(_reactShare.LinkedinIcon, { round: true, size: iconSize }),
-	          _react2.default.createElement(
-	            _reactShare.LinkedinShareCount,
-	            { url: url },
-	            function (count) {
-	              return _react2.default.createElement(
-	                "div",
-	                { className: "share-count" },
-	                filter(count)
-	              );
-	            }
-	          )
-	        )
+	        _react2.default.createElement(_SocialIcons2.default, null)
 	      )
 	    );
 	  };
